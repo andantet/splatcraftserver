@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "splatcraftserver",
+  "version": "${version}",
+
+  "name": "Splatcraft (Dodo Gang Server)",
+  "description": "Splatcraft server mod for Dodo Gang",
+  "authors": [
+    "andante."
+  ],
+  "contact": {
+    "homepage": "https://github.com/dodogang/splatcraftserver",
+    "sources": "https://github.com/dodogang/splatcraftserver",
+    "issues": "https://github.com/dodogang/splatcraftserver/issues"
+  },
+
+  "license": "MIT",
+  "icon": "assets/splatcraftserver/icon.png",
+
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "net.dodogang.splatcraftserver.SplatcraftServer"
+    ]
+  },
+  "mixins": [
+    "splatcraftserver.mixins.json"
+  ],
+  "accessWidener": "splatcraftserver.accesswidener",
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+
+    "splatcraft": "*"
+  }
+}
